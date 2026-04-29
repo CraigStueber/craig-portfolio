@@ -1,0 +1,121 @@
+{
+  "type": "authoritative_facts",
+  "domain": "research",
+  "owner": "Craig Stueber",
+  "lastUpdated": "2026-01-09",
+  "dissertation": {
+    "title": "Evaluating the Security of AI-Generated Code: A Quantitative Study Using a Custom Scoring Framework",
+    "institution": "National University",
+    "school": "School of Technology and Engineering",
+    "degree": "Doctor of Philosophy (Ph.D.)",
+    "field": "Computer Science",
+    "status": "Doctoral Candidate — in progress",
+    "expectedCompletion": 2026,
+    "type": "Quantitative, quasi-experimental, constructive study",
+    "coreResearchQuestion": "How can security risks in AI-generated code be evaluated and mitigated using a measurable, reproducible framework?",
+    "problemStatement": "Current software security practices cannot systematically detect or mitigate vulnerabilities in AI-generated code before deployment. AI coding assistants such as GitHub Copilot and DeepMind AlphaCode are rapidly integrated into development workflows, but their outputs are probabilistic, opaque, and often bypass established quality assurance pipelines. Existing static analysis tools were designed for human-written code and fail to capture the unique failure modes introduced by large language models.",
+    "purpose": "To design and validate a reproducible security scoring framework that enables organizations to detect and measure vulnerabilities in AI-generated code before deployment.",
+    "framework": {
+      "name": "Hybrid Vulnerability Scoring Framework",
+      "layers": [
+        {
+          "layer": 1,
+          "name": "OWASP Top 10 Classification",
+          "description": "Classifies vulnerabilities using the OWASP Top 10 taxonomy of critical application security risks"
+        },
+        {
+          "layer": 2,
+          "name": "AI-Specific Vulnerability Pattern Layer",
+          "description": "Identifies vulnerability characteristics arising specifically from the probabilistic and training-data-dependent nature of LLM code generation",
+          "patterns": [
+            "Training Data Credential Exposure -- hardcoded credentials consistent with training corpus replication",
+            "Incomplete Error Handling Truncation -- error handling syntactically present but semantically incomplete",
+            "Insecure Default Propagation -- security-sensitive parameters left at insecure defaults due to model optimization for functional correctness",
+            "Semantic Security Gap -- generated code complete relative to prompt but omitting a security-critical implementation step"
+          ]
+        },
+        {
+          "layer": 3,
+          "name": "CVSS v3.1 Severity Quantification",
+          "description": "Scores vulnerability severity using CVSS metrics modified to reflect elevated risk characteristics of AI-generated outputs"
+        }
+      ]
+    },
+    "researchQuestions": [
+      "How does the security of AI-generated code compare to human-written code when evaluated using a standardized vulnerability scoring framework?",
+      "Can the proposed security scoring framework reliably detect and quantify vulnerabilities in AI-generated code across different programming tasks?",
+      "How does the proposed framework's detection rate compare to existing static analysis tools?"
+    ],
+    "hypotheses": [
+      "AI-generated code exhibits a significantly higher number of security vulnerabilities than human-written code",
+      "The proposed framework detects significantly more vulnerabilities in AI-generated code than existing static analysis tools",
+      "The scoring framework consistently detects vulnerabilities across different programming task types"
+    ],
+    "methodology": {
+      "approach": "Constructive research methodology within the Design Science tradition",
+      "design": "Quasi-experimental",
+      "components": [
+        "Controlled code generation benchmarks using standardized prompts",
+        "Automated vulnerability scanning aligned to OWASP Top 10 and CVSS v3.1",
+        "Behavioral testing for hallucination, drift, refusal failure, and instability",
+        "Prompt variation experiments across system, role, meta, and adversarial prompts",
+        "Statistical analysis using Mann-Whitney U test, ANOVA, and paired comparisons",
+        "Expert validation with software security professionals"
+      ],
+      "sample": "60 AI-generated and 60 human-written code artifacts across 20 programming tasks in 2 languages",
+      "aiToolsEvaluated": ["GitHub Copilot", "DeepMind AlphaCode"]
+    },
+    "significance": {
+      "practical": "Provides organizations with a reproducible tool to evaluate whether AI-generated code is production-safe before deployment",
+      "scholarly": "Extends established security frameworks (OWASP, CVSS) into the emerging domain of AI-assisted coding",
+      "policy": "Offers practical guidance for guardrails, approved prompts, evaluation pipelines, and organizational risk thresholds",
+      "ethical": "Addresses shared responsibility of developers, organizations, and tool creators for safe and transparent AI deployment"
+    },
+    "keyFindings": {
+      "priorWork": "Pearce et al. (2021) found GitHub Copilot produced insecure code in nearly 40% of security-sensitive cases",
+      "gap": "No validated framework exists to systematically evaluate AI-generated code security across diverse tasks and contexts"
+    }
+  },
+  "broaderResearchInterests": {
+    "summary": "Beyond the dissertation, Craig's research interests span AI behavioral reliability, human agency in automated systems, and the operational ethics of AI deployment. These themes are developed through his Medium essay series and inform his engineering practice.",
+    "areas": [
+      {
+        "area": "AI Behavioral Reliability and Drift",
+        "description": "How and why LLM behavior degrades over time, across prompt variations, and under adversarial input. Includes hallucination rate measurement, sycophancy detection, and multi-step reasoning collapse."
+      },
+      {
+        "area": "Human Agency and Automation",
+        "description": "How frictionless automation quietly erodes cognitive capacity, judgment, and identity. Central thesis of The Comfortable Apocalypse and explored across multiple Medium essays."
+      },
+      {
+        "area": "AI Integration Failure Modes",
+        "description": "Why most AI failures occur at the integration layer rather than the model layer. Examines assumption collapse, over-automation, missing observability, and poor recovery design in production systems."
+      },
+      {
+        "area": "Human-in-the-Loop System Design",
+        "description": "HITL as an architectural decision rather than a safety declaration. Requires information visibility, time constraints, escalation paths, and genuine decision authority to function."
+      },
+      {
+        "area": "Prompt Architecture as a Safety Control",
+        "description": "How system prompt structure, constraint layering, and meta-prompts reduce hallucination, drift, and unsafe outputs in production-deployed LLM systems."
+      },
+      {
+        "area": "Evaluation Methodology for AI Systems",
+        "description": "Why accuracy is an insufficient metric for production AI. Advocates for behavioral observability, drift detection, and consequence modeling as evaluation primitives."
+      }
+    ]
+  },
+  "usageRulesForFred": {
+    "mayStateConfidently": [
+      "Craig is a doctoral candidate at National University, expected to complete in 2026",
+      "His dissertation develops a hybrid vulnerability scoring framework combining OWASP, CVSS, and an AI-specific pattern layer",
+      "His research focus is on security risks in AI-generated code and behavioral reliability",
+      "His broader research interests include AI integration failure modes, human agency, and evaluation methodology"
+    ],
+    "mustNotClaim": [
+      "That the dissertation is complete or the degree has been awarded",
+      "Specific findings or results not stated here",
+      "Publication of the dissertation"
+    ]
+  }
+}

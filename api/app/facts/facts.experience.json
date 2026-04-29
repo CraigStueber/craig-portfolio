@@ -1,0 +1,235 @@
+{
+  "type": "authoritative_facts",
+  "domain": "professional_experience",
+  "owner": "Craig Stueber",
+  "lastUpdated": "2026-01-09",
+  "currentRole": {
+    "title": "Senior Full Stack Engineer — AI Systems Integration",
+    "company": "Berkshire Hathaway Energy (BHE GT&S)",
+    "location": "Richmond, VA",
+    "years": "2025 – Present",
+    "status": "Current"
+  },
+  "roles": [
+    {
+      "title": "Senior Full Stack Engineer — AI Systems Integration",
+      "company": "Berkshire Hathaway Energy (BHE GT&S)",
+      "location": "Richmond, VA",
+      "years": "2025 – Present",
+      "responsibilities": [
+        "Tech lead and people lead for a team of 6 engineers building Dekaflow 2.0, a next-generation enterprise platform managing natural gas scheduling and operational workflows supporting billions of dollars in annual east coast energy movement",
+        "Leading front-end and backend modernization of Dekaflow 2.0, building a contemporary React and cloud-based system that integrates with a 25-year-old Java and SQL legacy platform",
+        "Built and owned full-stack features end to end across Next.js, Java, MongoDB, and Azure, including gas flow scheduling, hourly quantity tracking, critical notices, TSP switching, and a cross-cutting user preferences system that propagates configuration state across the entire application",
+        "Leading early-stage AI agent R&D initiatives exploring agentic workflows for internal business processes, including data understanding and document retrieval use cases",
+        "Led a six-agent LangGraph pipeline R&D initiative for enterprise data understanding, translating complex operational data into actionable insights for business stakeholders",
+        "Built LangSmith-based evaluation pipelines to detect LLM behavioral regressions before model or prompt updates reached production",
+        "Designed and delivered a recurring AI-assisted development training program, building organizational fluency around structured prompting, responsible usage patterns, and LLM failure modes",
+        "Led enterprise-wide GitHub Copilot deployment across 200+ engineers, establishing usage standards, behavioral guardrails, and governance practices enabling safe AI adoption across multiple engineering teams",
+        "Designed behavior-constrained AI workflows for internal tools, reducing hallucination-related defects in production-critical systems",
+        "Conducted behavioral incident triage for AI-assisted systems, diagnosing failure modes including intention drift, unsafe outputs, and requirement misalignment",
+        "Gathered requirements directly from business stakeholders and end users, presented architectural progress to leadership, and justified tradeoff decisions across feature scope, delivery timelines, and system design in a 0 to 1 product context",
+        "Translated abstract AI risk, safety, and compliance requirements into deployable, auditable system designs"
+      ],
+      "themes": [
+        "AI agent R&D",
+        "Agentic workflow design",
+        "Engineering team leadership",
+        "Applied AI architecture",
+        "AI governance and evaluation",
+        "Enterprise AI enablement",
+        "Legacy system modernization",
+        "Enterprise system integration",
+        "Regulated industry",
+        "0 to 1 product delivery"
+      ]
+    },
+    {
+      "title": "Senior Full Stack Developer — LLM-Integrated Systems",
+      "company": "Sauer Brands Inc",
+      "location": "Richmond, VA",
+      "years": "2021 – 2025",
+      "responsibilities": [
+        "Served as the sole engineer across 6 independent brand teams, building all customer-facing applications from 0 to 1 in direct collaboration with brand managers and third-party marketing partners, owning requirements, architecture, and delivery without product management support",
+        "Designed and shipped multiple consumer-facing React and Supabase applications including Hot Tomato Summer, a live voting platform reaching 30,000+ users in two weeks, plus sweepstakes, e-commerce storefronts, and event discovery tools",
+        "Built an agentic customer service tool that combined customer-submitted context with rep-authored input to research against an internal knowledge base and generate complete, ready-to-send response emails including recipient routing, CC recommendations, and delivery destination",
+        "Implemented rule-based priority classification on incoming customer service requests, automatically escalating and routing emergency-tier messages to the appropriate internal teams without requiring manual triage, eliminating bottlenecks across dozens of daily incoming requests",
+        "Integrated modern LLM-powered tooling and React-based interfaces with a legacy PeopleSoft system, bridging contemporary AI capabilities with established enterprise infrastructure",
+        "Designed data pipelines and API layers to normalize and validate inputs from legacy data sources before supplying them to LLM systems",
+        "Authored structured meta-prompts supporting classification, summarization, and predictive UX behaviors, with a focus on consistency, interpretability, and safe output boundaries",
+        "Ran controlled prompt experiments and A/B evaluations to analyze token sensitivity, edge-case behavior, and regression risks across evolving model versions prior to production rollout",
+        "Built data ingestion, caching, and retrieval pipelines using PostgreSQL and Redis to supply LLM systems with structured, validated inputs suitable for production use",
+        "Built Power Automate flows integrating LLM-powered processing into Outlook and internal communication workflows, enabling automated classification, routing, and response generation without custom backend infrastructure",
+        "Championed WCAG and ADA compliance across all brand properties",
+        "Replaced third-party tooling with in-house solutions, reducing external vendor costs by $250,000 annually",
+        "Mentored junior developers through code reviews, accessibility workshops, and prompting standards documentation"
+      ],
+      "notableProjects": [
+        "Hot Tomato Summer -- live voting platform, 30,000+ users in two weeks",
+        "Duke's Country",
+        "Kernel Season's Sweepstakes",
+        "Sauer Brand Websites",
+        "Sales Reporting Tool",
+        "PeopleSoft modernization and LLM integration"
+      ],
+      "themes": [
+        "Agentic AI systems",
+        "LLM integration",
+        "Automated routing and escalation",
+        "Prompt governance",
+        "Production reliability",
+        "Power Automate",
+        "Microsoft 365 workflow automation",
+        "0 to 1 product delivery",
+        "Sole engineer ownership"
+      ]
+    },
+    {
+      "title": "Co-Founder & Lead Engineer",
+      "company": "DanceCard",
+      "location": "Richmond, VA",
+      "years": "2024 – 2025",
+      "overview": "Co-founded and led all engineering for a cross-platform social mobile application. Both the AI/agentic architecture and the React Native mobile architecture were built and owned by Craig.",
+      "agenticAndAI": {
+        "summary": "Designed and shipped an agentic onboarding system using CrewAI that guided users through profile construction and event discovery",
+        "responsibilities": [
+          "Designed an agentic onboarding system using CrewAI with constrained generation patterns to maintain consistent, safe outputs within a consumer-facing context",
+          "Implemented moderation-ready content classification helpers using structured prompting",
+          "Applied constrained generation patterns to prevent unsafe or unpredictable model outputs in a consumer product"
+        ]
+      },
+      "mobileAndArchitecture": {
+        "summary": "Owned full product architecture and technical direction for a cross-platform React Native and Supabase mobile application",
+        "responsibilities": [
+          "Owned full product architecture and technical direction, making all infrastructure, data modeling, and delivery tradeoff decisions independently",
+          "Built real-time chat, event scheduling, and location-aware discovery across iOS and Android",
+          "Designed Supabase-backed data models for users, events, chat, and attendance with RLS and auditability",
+          "Led full App Store and Google Play submission including TestFlight and Play Console policy compliance"
+        ]
+      },
+      "themes": [
+        "Agentic systems",
+        "CrewAI",
+        "Constrained generation",
+        "Mobile architecture",
+        "React Native",
+        "Consumer product safety",
+        "0 to 1 product delivery",
+        "Founder engineering"
+      ]
+    },
+    {
+      "title": "Full Stack Engineer — ML-Enhanced IoT Systems",
+      "company": "Talos IoT",
+      "location": "Glen Allen, VA",
+      "years": "2021",
+      "responsibilities": [
+        "Integrated ML models for time-series anomaly detection and classification into backend services to identify sensor abnormalities and operational risks",
+        "Built real-time IoT monitoring dashboards using React, Python, and WebSockets, translating ML outputs into actionable insights for technicians and field operators",
+        "Designed evaluation pipelines measuring model accuracy, false positives, and telemetry drift",
+        "Collaborated with product, firmware, and operations teams to ensure ML outputs were interpretable and operationally useful"
+      ],
+      "themes": [
+        "ML evaluation",
+        "IoT systems",
+        "Interpretability",
+        "Real-time data",
+        "Reliability"
+      ]
+    },
+    {
+      "title": "Front-End Developer — Interactive & Emerging Tech",
+      "company": "Kurb Media LLC",
+      "location": "Remote",
+      "years": "2019 – 2021",
+      "responsibilities": [
+        "Delivered client projects across a diverse stack including React, Next.js, PHP, WordPress, Shopify, and vanilla HTML, context-switching between languages and platforms as client needs dictated",
+        "Managed requirements, tradeoffs, and delivery timelines directly with stakeholders across every engagement",
+        "Developed UI components for early AR prototypes",
+        "Explored foundational ML and computer-vision concepts"
+      ],
+      "themes": [
+        "Multi-stack delivery",
+        "Client-facing engineering",
+        "Emerging tech exploration"
+      ]
+    },
+    {
+      "title": "Freelance Full Stack Engineer",
+      "company": "Independent",
+      "location": "Richmond, VA",
+      "years": "2017 – 2021",
+      "overview": "Built and delivered full-stack web applications and consulting engagements across authors, real estate, nonprofits, and healthcare-adjacent clients. Owned requirements, scoping, and delivery without project management support. Includes contract engagements at PresenceLearning and Soar365.",
+      "notableEngagements": [
+        {
+          "client": "PresenceLearning",
+          "type": "Contract",
+          "location": "Remote",
+          "responsibilities": [
+            "Modernized frontend templates and consolidated fragmented email systems",
+            "Improved mobile UX and accessibility",
+            "Reduced workflow risks through clearer structure and semantic HTML"
+          ]
+        },
+        {
+          "client": "Soar365",
+          "type": "Contract",
+          "location": "Richmond, VA",
+          "responsibilities": [
+            "Conducted full WCAG and ADA audit and remediation",
+            "Migrated site to a maintainable Wix platform",
+            "Improved UX clarity, semantic structure, and device compatibility",
+            "Trained staff on accessibility-informed workflows"
+          ]
+        }
+      ],
+      "themes": [
+        "Accessibility",
+        "Full stack delivery",
+        "Client ownership",
+        "Nonprofit and small business clients"
+      ]
+    }
+  ],
+  "careerSignals": {
+    "seniority": "Senior and lead-level engineer across both AI systems and full-stack engineering",
+    "coreStrengths": [
+      "Production AI system design, evaluation, and governance",
+      "Agentic workflow architecture with LangGraph, CrewAI, and LangChain",
+      "Full-stack engineering across React, Next.js, Python, Java, and Node.js",
+      "0 to 1 product delivery in both startup and enterprise contexts",
+      "LLM behavioral evaluation, drift detection, and prompt governance",
+      "Enterprise AI enablement and team-level AI adoption leadership",
+      "Accessibility and ethical UX as core engineering requirements"
+    ],
+    "roleFit": [
+      "Applied AI Engineer",
+      "Forward Deployed AI Engineer",
+      "AI Systems Engineer",
+      "AI Safety Engineer",
+      "Senior Full Stack Engineer",
+      "Lead Front-End Engineer"
+    ],
+    "locationFlexibility": {
+      "openToRelocation": true,
+      "targetRegions": ["California", "New York City"],
+      "notes": "Open to hybrid or in-person roles in major tech hubs."
+    }
+  },
+  "usageRulesForFred": {
+    "mayStateConfidently": [
+      "Current and past titles exactly as listed",
+      "Seniority and lead-level responsibilities",
+      "AI-focused responsibilities and agentic system work",
+      "Enterprise and startup experience across multiple contexts",
+      "The $250,000 vendor cost reduction at Sauer Brands",
+      "The 30,000+ user voting platform at Sauer Brands",
+      "The 200+ engineer GitHub Copilot deployment at BHE",
+      "DanceCard involved both agentic AI work and React Native mobile architecture"
+    ],
+    "mustNotInfer": [
+      "Management authority or headcount ownership beyond what is stated",
+      "Employment gaps not listed",
+      "Any title, responsibility, or achievement not present in this file"
+    ]
+  }
+}

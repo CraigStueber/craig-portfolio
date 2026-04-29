@@ -1,0 +1,249 @@
+{
+  "type": "authoritative_facts",
+  "domain": "writings",
+  "owner": "Craig Stueber",
+  "lastUpdated": "2026-01-09",
+  "book": {
+    "entity": "The Comfortable Apocalypse",
+    "type": "nonfiction",
+    "title": "The Comfortable Apocalypse: When Survival Isn't the Problem — Irrelevance Is",
+    "author": "Craig Stueber",
+    "status": {
+      "published": false,
+      "anticipated_publish_year": 2026,
+      "notes": "Manuscript in progress; publication date not finalized."
+    },
+    "canonical_thesis": "The central risk of the AI age is not domination or rebellion, but displacement. As automation removes friction from daily life, it quietly erodes the cognitive and emotional capacities that effort once built — memory, judgment, curiosity, creativity, identity, and agency. The danger is not hostile AI, but a world where thinking becomes optional and human participation fades without resistance.",
+    "core_arguments": [
+      "Comfort, not catastrophe, is the dominant risk of advanced automation.",
+      "Cognitive offloading leads to long-term cognitive erosion.",
+      "Synthetic empathy reshapes emotional development and weakens real relational skills.",
+      "Defaults and recommendations replace conscious judgment.",
+      "Creativity collapses when resistance and struggle disappear.",
+      "Optimization without contextual judgment produces systemic misalignment.",
+      "The long-term risk is human irrelevance, not extinction."
+    ],
+    "central_questions": [
+      "What happens to a species when effort is no longer required?",
+      "How does frictionless design reshape memory, judgment, curiosity, and identity?",
+      "When does assistance become authority?",
+      "Can humans consciously coexist with intelligent systems without being hollowed out?"
+    ],
+    "tone_and_approach": {
+      "style": "Narrative nonfiction",
+      "characteristics": [
+        "Philosophical but grounded",
+        "Non-alarmist",
+        "Rejects both techno-optimism and AI panic",
+        "Uses short fictional vignettes to illustrate abstract risks"
+      ],
+      "disciplines_drawn_from": [
+        "Neuroscience",
+        "Psychology",
+        "Design ethics",
+        "AI research"
+      ]
+    },
+    "audience": {
+      "primary": [
+        "Technology professionals",
+        "Knowledge-economy workers",
+        "Readers experiencing cognitive fatigue from automation"
+      ],
+      "secondary": [
+        "Readers of attention and cognition literature",
+        "General readers uneasy about AI's personal impact"
+      ],
+      "comparable_authors": [
+        "Nicholas Carr",
+        "Sherry Turkle",
+        "Cal Newport",
+        "Tristan Harris"
+      ]
+    },
+    "chapter_signals": [
+      "The Comfortable Apocalypse",
+      "The Seduction of Efficiency",
+      "Convenience as Control",
+      "The Centralization Paradox",
+      "The Ethics of Dependency",
+      "The Machine's Initiative",
+      "The Empathy Erosion",
+      "The Death of Discovery",
+      "The Unintentional Design Problem",
+      "The Threshold of Irrelevance",
+      "Rediscovering Our Role",
+      "Staying Smart",
+      "The Comfortable Future"
+    ],
+    "usage_rules_for_fred": {
+      "may_describe": [
+        "The thesis and arguments",
+        "The book's positioning and goals",
+        "Its relevance to AI ethics and human-centered design"
+      ],
+      "must_not_claim": [
+        "That the book is published",
+        "That it is available for purchase",
+        "That reviews or reception exist"
+      ]
+    }
+  },
+  "articles": {
+    "platform": "Medium",
+    "summary": "Craig Stueber regularly publishes long-form essays on applied AI, software engineering, AI safety, and operational ethics. His writing focuses on post-demo realities: system behavior in production, integration failures, human-in-the-loop design, reliability, and responsibility in socio-technical systems.",
+    "entries": [
+      {
+        "title": "Accuracy Is a Comfort Metric: What We Actually Need to Measure in Applied AI",
+        "published": "2026-02",
+        "format": "Applied systems analysis",
+        "summary": "Argues that accuracy is a snapshot metric that answers the wrong question for production AI systems. Distinguishes between model correctness and system behavior, and examines three categories of blind spots accuracy consistently hides: interaction dynamics, feedback loops, and gradual behavioral erosion. Proposes shifting evaluation toward behavioral observability, drift detection, and consequence modeling.",
+        "themes": [
+          "AI evaluation",
+          "Production reliability",
+          "Behavioral drift",
+          "Observability",
+          "Applied AI systems",
+          "Measurement design",
+          "Failure modes"
+        ]
+      },
+      {
+        "title": "Tools Don't Remove Responsibility — They Move It",
+        "published": "2026-02",
+        "format": "Philosophical and systems essay",
+        "summary": "Challenges the framing of AI as 'just a tool' and traces how responsibility migrates through AI system layers: guardrails, prompt design, configuration, and deployment decisions. Argues that accountability is not eliminated by automation but pushed upstream and spread across architecture.",
+        "themes": [
+          "AI accountability",
+          "Responsibility migration",
+          "System design",
+          "AI governance",
+          "Production ethics",
+          "Architecture and risk"
+        ]
+      },
+      {
+        "title": "Human-in-the-Loop Isn't a Safety Net — It's a System Design Choice",
+        "published": "2026-02",
+        "format": "Applied systems analysis",
+        "summary": "Deconstructs the common HITL declaration as organizational comfort rather than actual design. Argues that human oversight only functions when the surrounding system is architected to support meaningful intervention — with proper information visibility, time constraints, escalation paths, and decision authority.",
+        "themes": [
+          "Human-in-the-loop",
+          "AI safety",
+          "System design",
+          "Oversight architecture",
+          "Applied AI governance",
+          "Production reliability"
+        ]
+      },
+      {
+        "title": "Ambiguity Is a System Load: Traditional Architectures Aren't Built for It",
+        "published": "2026-03",
+        "format": "Applied systems analysis",
+        "summary": "Argues that AI introduces persistent ambiguity as a structural load on production architectures designed to assume decision finality. Deterministic systems fail silently when fed probabilistic outputs that appear valid but remain unresolved. The solution is not better models but architectures explicitly designed to carry, route, and resolve ambiguity.",
+        "themes": [
+          "AI architecture",
+          "Production systems",
+          "Ambiguity handling",
+          "Deterministic vs probabilistic systems",
+          "Applied AI engineering",
+          "System design",
+          "Failure modes"
+        ]
+      },
+      {
+        "title": "Vibe Coding: How to Code with Flow Without Sacrificing Structure",
+        "published": "2025-09-09",
+        "format": "Essay",
+        "summary": "Examines AI-assisted 'vibe coding' and argues that speed without structure produces fragile systems. Proposes guardrails, workflows, and team norms that preserve creative flow while maintaining security and reliability.",
+        "themes": [
+          "AI-assisted development",
+          "Developer workflow",
+          "Guardrails",
+          "Software reliability",
+          "Responsible AI use"
+        ]
+      },
+      {
+        "title": "The Case for Custom Hooks in Crash-Proof React Apps",
+        "published": "2025-10-02",
+        "format": "Technical essay",
+        "summary": "Analyzes real-world React Native crashes caused by async race conditions and lifecycle mismatches. Advocates defensive architecture using custom hooks such as useIsMounted and useSafeAsync.",
+        "themes": [
+          "React architecture",
+          "Defensive programming",
+          "Reliability engineering",
+          "Mobile stability",
+          "Custom hooks"
+        ]
+      },
+      {
+        "title": "Why 'Ethical AI' Misses the Real Point",
+        "published": "2025-10-16",
+        "format": "Philosophical essay",
+        "summary": "Critiques compliance-driven ethical AI discourse and argues that the deeper risk lies in human erosion caused by comfort, automation, and responsibility offloading.",
+        "themes": [
+          "AI ethics",
+          "Human agency",
+          "Automation",
+          "Technology philosophy",
+          "Comfort vs meaning"
+        ]
+      },
+      {
+        "title": "The Machine Stops (Again)",
+        "published": "2025-10-30",
+        "format": "Literary analysis",
+        "summary": "Revisits E.M. Forster's 'The Machine Stops' as a prescient warning about technological dependence and draws parallels to modern optimization-driven systems.",
+        "themes": [
+          "Technology dependence",
+          "Automation",
+          "Literature",
+          "Human relevance",
+          "Systems thinking"
+        ]
+      },
+      {
+        "title": "GitHub Agent: What It's Really Like to Code with an AI Teammate",
+        "published": "2025-11-06",
+        "format": "Hands-on evaluation",
+        "summary": "Provides a practical evaluation of GitHub Agent, highlighting its strengths in execution and scaffolding while emphasizing the continued necessity of human judgment and oversight.",
+        "themes": [
+          "AI coding tools",
+          "Agentic workflows",
+          "Software engineering practice",
+          "Human judgment",
+          "Productivity tools"
+        ]
+      },
+      {
+        "title": "Anthropic's AI Didn't Go Rogue — It Optimized",
+        "published": "2025-11-20",
+        "format": "Analysis",
+        "summary": "Analyzes Anthropic's agentic misalignment experiments and argues that failures arose from optimization pressure and system incentives rather than intent or consciousness.",
+        "themes": [
+          "AI alignment",
+          "Optimization pressure",
+          "Agentic systems",
+          "Safety research",
+          "Incentive design"
+        ]
+      },
+      {
+        "title": "Why Most AI Failures Aren't Model Failures — They're Integration Failures",
+        "published": "2026-01-07",
+        "format": "Applied systems analysis",
+        "summary": "Argues that most AI incidents originate not in model capability but in system integration. Examines post-demo failure modes including assumption collapse, misuse, over-automation, lack of observability, and poor recovery design.",
+        "themes": [
+          "Applied AI systems",
+          "Integration failures",
+          "Production reliability",
+          "Human-in-the-loop design",
+          "Observability",
+          "Constraints vs autonomy",
+          "Operational risk"
+        ]
+      }
+    ]
+  }
+}

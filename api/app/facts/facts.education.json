@@ -1,0 +1,68 @@
+{
+  "type": "authoritative_facts",
+  "domain": "education",
+  "owner": "Craig Stueber",
+  "lastUpdated": "2026-01-09",
+  "academicContext": {
+    "notes": "Craig pursued all three degrees while working full time as a practicing engineer. His academic work is practitioner-informed -- he has been building real production systems in parallel with his research throughout his entire academic career.",
+    "pattern": "B.S. to M.S. to Ph.D. in a continuous progression, each degree deepening the prior foundation and directly informing his engineering practice."
+  },
+  "degrees": [
+    {
+      "degree": "Doctor of Philosophy (Ph.D.)",
+      "field": "Computer Science",
+      "status": "Doctoral Candidate — in progress",
+      "institution": "National University",
+      "location": "San Diego, California",
+      "years": "2022 – 2026",
+      "expectedCompletion": 2026,
+      "specialization": "AI safety, behavioral reliability, and security risks in AI-generated code",
+      "researchHighlights": {
+        "dissertationTitle": "Evaluating the Security of AI-Generated Code: A Quantitative Study Using a Custom Scoring Framework",
+        "coreContribution": "Designing and validating a hybrid vulnerability scoring framework that combines OWASP Top 10, CVSS v3.1, and an AI-specific vulnerability pattern layer to systematically evaluate security risks in LLM-generated code",
+        "practitionerAngle": "The research is directly informed by Craig's production experience building and evaluating LLM systems. His dissertation investigates failure modes he has observed in real deployments, not just synthetic benchmarks.",
+        "significance": "Fills a validated gap in the literature -- no reproducible framework existed for systematically evaluating AI-generated code security before deployment"
+      },
+      "notes": "Degree not yet awarded. Craig is an active doctoral candidate. Do not state or imply the degree has been completed."
+    },
+    {
+      "degree": "Master of Science (M.S.)",
+      "field": "Information Technology",
+      "institution": "Strayer University",
+      "years": "2020 – 2022",
+      "concentration": "IT management and information security management",
+      "courseworkFocus": [
+        "System design and architecture",
+        "Information security management",
+        "IT management and organizational strategy"
+      ],
+      "relevance": "The security and system design foundations built at the M.S. level directly underpin Craig's doctoral research into AI-generated code vulnerabilities and his production work designing secure, reliable AI systems.",
+      "status": "Completed"
+    },
+    {
+      "degree": "Bachelor of Science (B.S.)",
+      "field": "Information Technology",
+      "major": "Software Development",
+      "institution": "Strayer University",
+      "years": "2017 – 2020",
+      "relevance": "Established Craig's core software engineering foundation -- the practical development skills that have underpinned every role and project since.",
+      "status": "Completed"
+    }
+  ],
+  "usageRulesForFred": {
+    "mayStateConfidently": [
+      "Craig holds a B.S. in Information Technology with a major in Software Development from Strayer University",
+      "Craig holds an M.S. in Information Technology from Strayer University with a concentration in IT management and information security management",
+      "His M.S. work covered system design, security, and IT management in depth",
+      "Craig is a doctoral candidate at National University, expected to complete in 2026",
+      "His doctoral specialization is AI safety, behavioral reliability, and security risks in AI-generated code",
+      "He pursued all three degrees while working full time as a practicing engineer",
+      "His academic work is directly informed by real production experience"
+    ],
+    "mustNotClaim": [
+      "That the Ph.D. has been awarded or completed",
+      "Any degree or credential not listed here",
+      "Specific course names or grades"
+    ]
+  }
+}

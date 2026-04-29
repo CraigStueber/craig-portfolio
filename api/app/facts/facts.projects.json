@@ -1,0 +1,251 @@
+{
+  "type": "authoritative_facts",
+  "domain": "projects_and_products",
+  "owner": "Craig Stueber",
+  "lastUpdated": "2026-01-09",
+  "summary": "Craig Stueber has built and contributed to a wide range of production systems across AI safety tooling, enterprise platforms, mobile applications, high-traffic public sites, and experimental systems. His projects consistently emphasize predictability, safety, accessibility, and clear system behavior.",
+  "projects": [
+    {
+      "name": "CodeRisk Advisor",
+      "category": "AI Safety / LLM Systems",
+      "status": "Live production",
+      "liveUrl": "https://coderisk.craigstueber.com",
+      "description": "Multi-agent AI security review system for Python, JavaScript, and TypeScript code. Combines OWASP Top 10 vulnerability scanning with AI-specific behavioral risk detection using a panel of specialized LLM agents that synthesize findings into conversational developer guidance.",
+      "impact": "Live production tool demonstrating applied multi-agent orchestration, adversarial review patterns, and structured LLM output in a security-critical domain.",
+      "highlights": [
+        "LangGraph agent pipeline: VulnScanner, BehavioralRisk, Skeptic, Remediation, Synthesizer",
+        "Skeptic agent actively disputes low-confidence findings to reduce false positives",
+        "AI-specific behavioral risk detection covering hallucinated APIs, prompt injection, unsafe deserialization, and over-trust patterns",
+        "Token-by-token SSE streaming with real-time agent status updates in the UI",
+        "Session continuity via LangGraph MemorySaver checkpointer and X-Session-ID header",
+        "Deployed on Google Cloud Run with containerConcurrency: 1 to isolate in-process state",
+        "LangSmith tracing integrated for full observability across agent runs"
+      ],
+      "technologies": [
+        "LangGraph",
+        "FastAPI",
+        "Python",
+        "OpenAI GPT-4.1",
+        "OpenAI GPT-4.1-mini",
+        "Anthropic Claude Sonnet 4.5",
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Google Cloud Run",
+        "LangSmith",
+        "SSE"
+      ]
+    },
+    {
+      "name": "Portfolio Site — craigstueber.com",
+      "category": "AI Systems / Applied Architecture",
+      "status": "Live -- actively developed",
+      "liveUrl": "https://craigstueber.com",
+      "description": "A professional portfolio site built as a live demonstration of applied AI architecture. The site is a long-scroll React SPA with section-scoped AI agents accessible via per-section chat modals. Each section of the site (Experience, Education, Projects, Skills, Research, Writings) has its own chat context powered by a LangGraph backend. A separate Role Fit page allows visitors to paste a job description and receive a structured, honest fit assessment.",
+      "architectureHighlights": [
+        "LangGraph backend deployed on Google Cloud Run (FastAPI + Python)",
+        "Fred agent handles all section-scoped chat with full facts always injected -- section_id shapes tone and focus via prompt instruction, not data boundary",
+        "Fred graph: retrieval → response → fact_check → drift_guard → guardrail",
+        "FactCheck node validates every draft response against authoritative facts before it exits the graph",
+        "DriftGuard node detects persona erosion across conversation turns",
+        "Guardrail node is a shared exit node on every graph -- strips hallucinated credentials, enforces third-person Fred persona, blocks boundary violations",
+        "Role Fit graph: jd_parser → profile_matcher → gap_analyst → synthesizer → guardrail",
+        "Cloudflare Vectorize for semantic retrieval",
+        "Cloudflare Pages for frontend hosting",
+        "Cloudflare Workers as thin edge proxy between frontend and Cloud Run backend",
+        "Section history persisted in React local state per section, isolated across sections",
+        "Cross-section questions answered accurately with natural nudge toward the relevant section"
+      ],
+      "technologies": [
+        "LangGraph",
+        "FastAPI",
+        "Python",
+        "OpenAI GPT-4.1-mini",
+        "React",
+        "TypeScript",
+        "Vite",
+        "Cloudflare Pages",
+        "Cloudflare Workers",
+        "Cloudflare Vectorize",
+        "Google Cloud Run"
+      ]
+    },
+    {
+      "name": "Dekaflow 2.0",
+      "organization": "Berkshire Hathaway Energy (BHE GT&S)",
+      "category": "Enterprise Platform",
+      "status": "Active -- in production",
+      "description": "Next-generation enterprise platform managing natural gas scheduling and operational workflows supporting billions of dollars in annual east coast energy movement. Built as a modern React and cloud-based system integrating with a 25-year-old Java and SQL legacy platform.",
+      "impact": "Mission-critical enterprise product serving operational workflows at scale in a regulated energy environment. Craig serves as tech lead and people lead for a team of 6 engineers.",
+      "highlights": [
+        "Full-stack feature ownership across Next.js, Java, MongoDB, and Azure including gas flow scheduling, hourly quantity tracking, critical notices, TSP switching, and a cross-cutting user preferences system",
+        "Led early-stage AI agent R&D initiative designing a six-agent LangGraph pipeline for enterprise data understanding, translating complex operational data into actionable business insights",
+        "Built LangSmith-based evaluation pipelines to detect LLM behavioral regressions before model or prompt updates reached production",
+        "Led enterprise-wide GitHub Copilot deployment across 200+ engineers, establishing behavioral guardrails and governance practices",
+        "Designed and delivered a recurring AI-assisted development training program building organizational fluency around structured prompting and LLM failure modes",
+        "Designed integration layers and data contracts between modern cloud infrastructure and legacy enterprise systems",
+        "Gathered requirements directly from business stakeholders, presented architectural progress to leadership, and justified tradeoff decisions in a 0 to 1 product context"
+      ],
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Next.js",
+        "Material UI",
+        "Jotai",
+        "Java",
+        "MongoDB",
+        "Azure",
+        "LangGraph",
+        "LangSmith",
+        "GitHub Copilot"
+      ]
+    },
+    {
+      "name": "DanceCard",
+      "category": "Social Platform / Mobile Application",
+      "status": "Completed",
+      "description": "Co-founded and led all engineering for a cross-platform social mobile application connecting people through shared hobbies. Both the agentic AI architecture and the React Native mobile architecture were fully designed and built by Craig.",
+      "agenticAndAI": {
+        "summary": "Designed and shipped an agentic onboarding system using CrewAI",
+        "highlights": [
+          "Agentic onboarding system using CrewAI that guided users through profile construction and event discovery",
+          "Constrained generation patterns to maintain consistent, safe outputs within a consumer-facing context",
+          "Moderation-ready content classification helpers using structured prompting",
+          "Applied failure containment between agents to prevent unsafe or unpredictable outputs"
+        ]
+      },
+      "mobileAndArchitecture": {
+        "summary": "Owned full product architecture for a cross-platform React Native and Supabase mobile application",
+        "highlights": [
+          "Full product architecture and technical direction -- all infrastructure, data modeling, and delivery tradeoffs owned independently",
+          "Real-time chat, event scheduling, and location-aware discovery across iOS and Android",
+          "Supabase-backed data models for users, events, chat, and attendance with RLS and auditability",
+          "Full App Store and Google Play submission including TestFlight and Play Console policy compliance",
+          "Timezone-safe event scheduling and predictable real-time chat ordering"
+        ]
+      },
+      "technologies": [
+        "React Native",
+        "React",
+        "CrewAI",
+        "Supabase",
+        "Expo",
+        "PostgreSQL",
+        "Sentry",
+        "Firebase Crashlytics"
+      ]
+    },
+    {
+      "name": "PurrQuest",
+      "category": "Mobile Application",
+      "status": "Completed",
+      "description": "Location-aware mobile app for tracking outdoor and stray cats with an emphasis on clean state management and geolocation reliability.",
+      "impact": "Showcases geospatial data modeling and deterministic UI behavior across devices.",
+      "highlights": [
+        "Google Maps API integration with clean separation of concerns",
+        "Schemas designed to avoid ambiguous location states",
+        "Secure photo uploads using Supabase storage policies",
+        "Exploration of future LLM-assisted tagging workflows"
+      ],
+      "technologies": [
+        "React Native",
+        "TypeScript",
+        "Google Maps API",
+        "Supabase",
+        "Supabase Edge Functions"
+      ]
+    },
+    {
+      "name": "Hot Tomato Summer",
+      "category": "High-Traffic Voting Platform",
+      "status": "Completed",
+      "description": "Multi-city restaurant voting platform engineered for scale and voting integrity at Sauer Brands.",
+      "impact": "Reached 30,000+ users in two weeks while mitigating adversarial voting behavior.",
+      "highlights": [
+        "Rule-based fraud detection and voting anomaly analysis dashboards",
+        "Safe authentication and device fingerprinting",
+        "Fail-safe rendering for national traffic surges"
+      ],
+      "technologies": [
+        "React",
+        "Redux",
+        "Supabase",
+        "Python",
+        "Authentication",
+        "Fingerprinting"
+      ]
+    },
+    {
+      "name": "Duke's Country",
+      "category": "High-Traffic Public Site",
+      "status": "Completed",
+      "description": "React-based site supporting national traffic surges during major sporting events at Sauer Brands.",
+      "impact": "Handled massive traffic loads while empowering non-technical teams through safe content editing workflows.",
+      "highlights": [
+        "Fail-safe rendering strategies for traffic spikes",
+        "Caching strategies for stability under load",
+        "Internal LLM helpers for non-technical content drafting"
+      ],
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Cloudflare Pages",
+        "Supabase"
+      ]
+    },
+    {
+      "name": "Talos IoT",
+      "category": "IoT Analytics",
+      "status": "Completed",
+      "description": "HVAC diagnostics and analytics system with interpretable real-time dashboards for technicians and field operators.",
+      "impact": "Improved predictive maintenance through clear and reliable system health indicators.",
+      "highlights": [
+        "Real-time IoT monitoring dashboards translating sensor data into actionable technician insights",
+        "ML model integration for time-series anomaly detection and classification",
+        "Evaluation pipelines measuring model accuracy, false positives, and telemetry drift",
+        "Grafana dashboards for real-time monitoring",
+        "Contributions to embedded firmware"
+      ],
+      "technologies": [
+        "React",
+        "React Native",
+        "Python",
+        "Grafana",
+        "AWS",
+        "C#",
+        "Docker",
+        "Embedded Firmware",
+        "WebSockets"
+      ]
+    },
+    {
+      "name": "Blue Door Art Gallery",
+      "category": "Portfolio Website",
+      "status": "Completed",
+      "description": "Performance-focused art portfolio site with predictable gallery behavior and simple admin workflows.",
+      "impact": "Delivered fast, reliable image presentation for an independent artist.",
+      "technologies": [
+        "Next.js",
+        "React",
+        "CSS Grid",
+        "Flexbox",
+        "Cloudflare Pages"
+      ]
+    }
+  ],
+  "usageRulesForFred": {
+    "mayStateConfidently": [
+      "CodeRisk Advisor is live at coderisk.craigstueber.com",
+      "The portfolio site itself is a live AI system demonstration",
+      "DanceCard involved both CrewAI agentic work and full React Native mobile architecture",
+      "Dekaflow 2.0 involved both full-stack engineering and AI R&D work",
+      "Hot Tomato Summer reached 30,000+ users in two weeks"
+    ],
+    "mustNotClaim": [
+      "Any project detail, metric, or technology not listed here",
+      "That any completed project is currently active unless marked as such",
+      "Revenue figures or client details beyond what is stated"
+    ]
+  },
+  "authorNotes": "Project summaries reflect Craig Stueber's direct contributions and architectural responsibilities. Details are derived from firsthand project documentation."
+}

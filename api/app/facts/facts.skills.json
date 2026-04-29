@@ -1,0 +1,360 @@
+{
+  "type": "authoritative_facts",
+  "domain": "technical_skills_and_capabilities",
+  "owner": "Craig Stueber",
+  "lastUpdated": "2026-01-09",
+  "summary": "Craig Stueber is a Senior Applied AI Engineer focused on production AI architecture, behavioral evaluation, and AI governance in enterprise environments. His work spans agentic system design, prompt engineering, LLM safety, retrieval-augmented generation, and forward-deployed AI applications. Secondary expertise in full-stack engineering with React, TypeScript, and Python.",
+  "aiAndSafety": {
+    "promptEngineering": {
+      "level": "Expert",
+      "experience": "Designs and deploys production-grade prompt architectures for real-world systems, not one-off demos.",
+      "knowledge": [
+        "System prompts, developer prompts, and user prompt layering",
+        "Meta-prompts for self-checking and constraint enforcement",
+        "Determinism tuning and temperature control strategies",
+        "Role-based and task-isolated prompt design",
+        "Failure-aware prompt patterns to reduce hallucination and overconfidence"
+      ],
+      "applications": [
+        "Enterprise AI tooling",
+        "Internal decision-support systems",
+        "AI-assisted developer workflows"
+      ]
+    },
+    "behavioralEvaluation": {
+      "experience": "Actively evaluates model behavior under realistic usage conditions rather than benchmark-only testing.",
+      "knowledge": [
+        "Hallucination rate measurement across repeated runs",
+        "Prompt sensitivity and brittleness testing",
+        "Sycophancy and over-agreeableness detection",
+        "Reasoning degradation in multi-step tasks",
+        "Long-context and instruction-following decay"
+      ],
+      "modelsEvaluated": [
+        "GPT family",
+        "Claude family",
+        "Open-source LLMs"
+      ],
+      "methods": [
+        "Multi-run stability analysis",
+        "Comparative behavioral testing across models",
+        "Scenario-based evaluation instead of static prompts"
+      ]
+    },
+    "aiSafetyAndAlignment": {
+      "experience": "Applies AI safety principles at the system and UX level, not just model selection.",
+      "knowledge": [
+        "Constrained generation and safe completion patterns",
+        "Adversarial prompt testing workflows",
+        "Human-in-the-loop escalation design",
+        "Ethical UX analysis for AI-assisted interfaces",
+        "Risk quantification using hybrid OWASP, CVSS, and behavioral metrics"
+      ]
+    },
+    "failureModeAnalysis": {
+      "experience": "Identifies and mitigates failure modes observed in real production systems.",
+      "knowledge": [
+        "Hallucinations",
+        "Refusal failures",
+        "Misalignment between system intent and model output",
+        "Prompt brittleness under minor input variation",
+        "Token and context dependency",
+        "Multi-step reasoning collapse"
+      ]
+    },
+    "modelDebuggingAndIncidentResponse": {
+      "experience": "Treats AI failures as operational incidents requiring diagnosis, reproduction, and correction.",
+      "knowledge": [
+        "Separating model-layer issues from prompt-layer issues",
+        "Designing minimal reproduction prompts",
+        "Implementing corrective prompt and agent strategies",
+        "Leading behavioral incident response and postmortems"
+      ]
+    }
+  },
+  "agenticFrameworksAndTooling": {
+    "experience": "Builds and evaluates agent-based systems with explicit control, observability, and failure boundaries.",
+    "frameworks": {
+      "LangGraph": {
+        "knowledge": [
+          "Graph-based agent workflows",
+          "Stateful multi-step execution",
+          "Conditional branching and recovery paths",
+          "Loop prevention and execution control",
+          "MemorySaver checkpointer for session continuity"
+        ]
+      },
+      "LangChain": {
+        "knowledge": [
+          "Tool calling and chain composition",
+          "Prompt templating and structured outputs",
+          "Integration with external systems and APIs"
+        ]
+      },
+      "LangSmith": {
+        "knowledge": [
+          "Tracing and observability of agent runs",
+          "Prompt and chain debugging",
+          "Evaluation of intermediate agent behavior",
+          "Behavioral regression detection before production rollout"
+        ]
+      },
+      "CrewAI": {
+        "knowledge": [
+          "Multi-agent task orchestration",
+          "Role-based agent design",
+          "Explicit responsibility boundaries between agents",
+          "Failure containment between agents"
+        ]
+      },
+      "LlamaIndex": {
+        "knowledge": [
+          "Document ingestion and indexing pipelines",
+          "RAG architecture and query engines",
+          "Evaluation of retrieval relevance and grounding",
+          "Integration with LangChain and LangGraph workflows"
+        ]
+      },
+      "PydanticAI": {
+        "knowledge": [
+          "Schema-based output validation for LLM responses",
+          "Structured output enforcement in production pipelines",
+          "Type-safe agent and tool definitions"
+        ]
+      },
+      "DSPy": {
+        "knowledge": [
+          "Prompt optimization and compilation",
+          "Declarative LLM program design",
+          "Evaluation-driven prompt refinement"
+        ]
+      },
+      "WeightsAndBiases": {
+        "knowledge": [
+          "Experiment tracking for LLM evaluation runs",
+          "Prompt and model performance monitoring",
+          "Behavioral drift detection across model versions"
+        ]
+      }
+    }
+  },
+  "llmEvaluationFrameworks": {
+    "experience": "Designs custom evaluation harnesses for testing LLM behavior beyond accuracy metrics.",
+    "knowledge": [
+      "Prompt regression testing",
+      "Behavioral consistency checks",
+      "Multi-run variance analysis",
+      "Scenario-based evaluation",
+      "Failure mode tagging and tracking"
+    ]
+  },
+  "retrievalAugmentedGeneration": {
+    "experience": "Designs RAG systems to reduce hallucination and improve factual grounding.",
+    "knowledge": [
+      "Chunking and embedding strategies",
+      "Semantic search and relevance tuning",
+      "Context window budgeting",
+      "Failure modes in retrieval (stale data, over-recall)",
+      "Separation of retrieval and reasoning responsibilities"
+    ]
+  },
+  "vectorSearchAndEmbeddings": {
+    "experience": "Uses vector embeddings to support retrieval and similarity-based workflows.",
+    "knowledge": [
+      "Embedding model selection",
+      "Cosine similarity and distance metrics",
+      "Index freshness and drift concerns",
+      "Evaluation of retrieval relevance",
+      "Pinecone vector index management",
+      "Weaviate schema and collection design",
+      "Cloudflare Vectorize for edge-deployed retrieval"
+    ]
+  },
+  "guardrailsAndOutputControl": {
+    "experience": "Implements guardrails to constrain LLM output and reduce unsafe or unreliable responses.",
+    "knowledge": [
+      "Schema-based output validation",
+      "Tool-only response enforcement",
+      "Refusal and fallback strategies",
+      "Partial response rejection",
+      "Post-generation validation layers"
+    ]
+  },
+  "llmObservabilityAndTelemetry": {
+    "experience": "Treats LLM systems as observable production services.",
+    "knowledge": [
+      "Prompt and response tracing",
+      "Token usage and cost monitoring",
+      "Behavioral anomaly detection",
+      "Incident-driven log review",
+      "Model and prompt versioning"
+    ]
+  },
+  "modelAbstractionAndRouting": {
+    "experience": "Designs systems that support multiple LLM providers and models.",
+    "knowledge": [
+      "Model capability tradeoffs",
+      "Fallback and escalation strategies",
+      "Cost-aware routing",
+      "Determinism and temperature normalization",
+      "Provider-specific failure patterns"
+    ]
+  },
+  "openAIAndAPIs": {
+    "experience": "Uses OpenAI APIs in production contexts with an emphasis on traceability and evaluation.",
+    "knowledge": [
+      "OpenAI SDK usage for chat and responses APIs",
+      "Structured outputs and tool calling",
+      "Token and cost optimization",
+      "Tracing and run inspection",
+      "Behavioral evaluation via logged runs",
+      "Anthropic Claude API usage in production systems"
+    ]
+  },
+  "microsoftPowerPlatform": {
+    "experience": "Used extensively at Sauer Brands to automate enterprise workflows and integrate LLM capabilities into existing M365 tooling.",
+    "knowledge": [
+      "Power Automate flows for business process automation",
+      "LLM integration via Power Automate (Outlook, internal systems)",
+      "Automated classification and routing workflows",
+      "Connecting external APIs and services through Power Platform connectors",
+      "Low-code orchestration as an alternative to custom backend services"
+    ]
+  },
+  "programmingLanguages": {
+    "html": {
+      "experience": "10+ years",
+      "knowledge": "Accessible, semantic, standards-compliant interfaces"
+    },
+    "css": {
+      "experience": "10+ years",
+      "knowledge": "Flexbox, Grid, responsive layouts, maintainable design systems"
+    },
+    "javascript": {
+      "experience": "10+ years",
+      "knowledge": "Enterprise dashboards, complex UI systems, event-driven architectures"
+    },
+    "typescript": {
+      "experience": "6+ years",
+      "knowledge": "Type-safe React and Next.js applications at scale"
+    },
+    "python": {
+      "experience": "6+ years",
+      "knowledge": "FastAPI backends, evaluation tooling, automation, AI experimentation, agentic systems"
+    },
+    "php": {
+      "experience": "8+ years",
+      "knowledge": "WordPress, backend services, legacy system integration"
+    },
+    "java": {
+      "experience": "5+ years",
+      "knowledge": "Enterprise backend development in regulated environments"
+    },
+    "csharp": {
+      "experience": "Project-based",
+      "knowledge": "IoT firmware and device-level programming"
+    },
+    "nodejs": {
+      "experience": "6+ years",
+      "knowledge": "REST APIs, microservices, CLI tooling"
+    }
+  },
+  "frameworksAndLibraries": {
+    "experience": "Used across production and internal platforms.",
+    "knowledge": [
+      "React",
+      "Next.js",
+      "React Native",
+      "FastAPI",
+      "Material UI",
+      "Tailwind CSS",
+      "Bootstrap",
+      "SASS"
+    ]
+  },
+  "dataAndBackend": {
+    "experience": "Designs and integrates data layers for both web and mobile systems.",
+    "knowledge": [
+      "SQL (proficient -- enterprise query writing, joins, aggregations, stored procedures)",
+      "Supabase (auth, RLS, triggers, storage)",
+      "PostgreSQL",
+      "MongoDB",
+      "SQL Server",
+      "MySQL",
+      "Redis"
+    ]
+  },
+  "stateManagement": {
+    "experience": "Selects state tools based on complexity and risk.",
+    "knowledge": [
+      "React Context API",
+      "Redux",
+      "Jotai"
+    ]
+  },
+  "testingAndQuality": {
+    "experience": "Strong emphasis on reliability and regression prevention.",
+    "knowledge": [
+      "Test-driven development",
+      "Jest unit testing",
+      "Integration testing",
+      "Async and mock-heavy test scenarios"
+    ]
+  },
+  "accessibilityAndUX": {
+    "experience": "Accessibility treated as a core engineering requirement.",
+    "knowledge": [
+      "WCAG 2.1 compliance",
+      "ADA remediation",
+      "Semantic HTML",
+      "Color contrast audits",
+      "Screen reader testing (NVDA, VoiceOver)",
+      "Ethical and safety-conscious UX design"
+    ]
+  },
+  "infrastructureAndDevOps": {
+    "experience": "Supports production deployment and observability across cloud and edge environments.",
+    "knowledge": [
+      "Docker",
+      "Linux and Bash",
+      "AWS (EC2, Lambda, S3)",
+      "Google Cloud Run (containerized Python services, scale-to-zero deployment)",
+      "Cloudflare Workers and Pages",
+      "Cloudflare Vectorize",
+      "Azure OpenAI Service",
+      "Azure AI Search (vector and semantic search)",
+      "Azure AI Studio",
+      "Azure pipelines and repositories",
+      "Responsible AI tooling and content filters"
+    ]
+  },
+  "mobileAndMonitoring": {
+    "experience": "End-to-end mobile delivery and monitoring.",
+    "knowledge": [
+      "Expo",
+      "OTA updates",
+      "App Store and Google Play publishing",
+      "Firebase Crashlytics",
+      "Sentry"
+    ]
+  },
+  "iotAndMonitoring": {
+    "experience": "Builds monitoring pipelines for physical systems.",
+    "knowledge": [
+      "Embedded firmware development",
+      "Real-time sensor pipelines",
+      "Grafana dashboards"
+    ]
+  },
+  "tooling": {
+    "experience": "Daily professional tooling.",
+    "knowledge": [
+      "Git",
+      "npm",
+      "Postman",
+      "Swagger / OpenAPI",
+      "VS Code",
+      "Bash scripting"
+    ]
+  }
+}

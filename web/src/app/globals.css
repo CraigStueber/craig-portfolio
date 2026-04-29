@@ -1,0 +1,156 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Colors */
+  --color-bg: #0a0a0a;
+  --color-surface: #111111;
+  --color-border: #1f1f1f;
+  --color-text-primary: #ededed;
+  --color-text-secondary: #a1a1a1;
+  --color-accent: #f59e0b;
+  --color-accent-hover: #d97706;
+  --color-accent-glow: rgba(245, 158, 11, 0.15);
+
+  /* Typography */
+  --font-mono: var(--font-geist-mono), "JetBrains Mono", "Fira Code", monospace;
+  --font-size-xs: 0.75rem; /* 12px -- labels, tags */
+  --font-size-sm: 0.875rem; /* 14px -- secondary text */
+  --font-size-base: 1rem; /* 16px -- body */
+  --font-size-lg: 1.125rem; /* 18px -- slightly elevated body */
+  --font-size-xl: 1.25rem; /* 20px -- card titles */
+  --font-size-2xl: 1.5rem; /* 24px -- section headings */
+  --font-size-3xl: 2rem; /* 32px -- hero name */
+  --font-size-4xl: 2.5rem; /* 40px -- hero large */
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 80px;
+
+  /* Layout */
+  --max-width: 860px;
+  --header-height: 56px;
+
+  /* Borders */
+  --border-radius: 4px;
+  --border-accent-width: 2px;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+}
+
+body {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Content width container -- used by all sections */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-xl);
+}
+
+/* Section base -- applied to every section */
+.section {
+  padding: var(--space-4xl) 0;
+}
+
+/* Alternating section backgrounds -- barely perceptible */
+.section--alt {
+  background-color: #0d0d0d;
+}
+
+/* Section heading with amber left bar */
+.section-heading {
+  font-size: var(--font-size-2xl);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  border-left: var(--border-accent-width) solid var(--color-accent);
+  padding-left: var(--space-md);
+  margin-bottom: var(--space-2xl);
+  letter-spacing: -0.02em;
+}
+
+/* Section label -- small mono label above heading */
+.section-label {
+  font-size: var(--font-size-xs);
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: var(--space-sm);
+}
+
+/* Ask Fred button -- sits bottom-right of each section */
+.ask-fred-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  background: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: var(--space-sm) var(--space-md);
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition:
+    color var(--transition-fast),
+    border-color var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.ask-fred-btn:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+  box-shadow: 0 0 8px var(--color-accent-glow);
+}
+
+/* Section footer -- holds the Ask Fred button, right-aligned */
+.section-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: var(--space-2xl);
+}
+
+/* Utility -- secondary text */
+.text-secondary {
+  color: var(--color-text-secondary);
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+.text-sm {
+  font-size: var(--font-size-sm);
+}
+
+.text-xs {
+  font-size: var(--font-size-xs);
+}

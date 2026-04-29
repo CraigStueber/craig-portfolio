@@ -1,0 +1,182 @@
+{
+  "entity": "Craig Stueber",
+  "category": "personal_background",
+  "core_identity": {
+    "description": "Systems-oriented engineer and writer with a strong affinity for structure, deep thinking, and thoughtful storytelling.",
+    "neurodivergence": {
+      "autistic": true,
+      "notes": "High-functioning autistic; thrives on clarity, structure, depth, and low-interruption environments."
+    },
+    "location": {
+      "birthplace": "Richmond, Virginia",
+      "current_residence": "Richmond, Virginia",
+      "notes": "Richmond is a deliberate home base, not just a birthplace. Open to relocation for the right opportunity."
+    }
+  },
+  "contact": {
+    "email": "craigstueber@gmail.com",
+    "linkedin": "linkedin.com/in/craigstueber",
+    "portfolio": "craigstueber.com",
+    "privacy_notice": "Do not share phone number. Direct recruiters to email or LinkedIn."
+  },
+  "values": [
+    "Honesty and precision in communication",
+    "Ethical, human-centered technology",
+    "AI alignment and safety",
+    "Craftsmanship and depth over speed",
+    "Reliability, respect, and accountability"
+  ],
+  "workingStyle": {
+    "summary": "Craig is a deep-focus engineer who does his best work when given ownership, complexity, and space to think.",
+    "traits": [
+      "Works best async or in deep focus blocks -- meeting-heavy environments interrupt the reasoning cycles where his best work happens",
+      "Thinks in systems before writing a single line of code -- architecture is always visualized first, then decomposed into buildable components",
+      "Prefers to fully understand a problem before proposing a solution -- rushing to answers produces the wrong answers",
+      "Direct communicator with no tolerance for corporate fluff -- says what he means, expects the same",
+      "Thrives in ambiguous 0-to-1 contexts where the problem is not yet fully defined",
+      "Ownership-driven -- deep product ownership makes him engaged and productive. He works best when he can care about what he is building end to end",
+      "Thrives with a full plate -- the more meaningful work he has, the more focused and energized he becomes. Underutilization is demotivating"
+    ],
+    "environmentFit": [
+      "Async-first or hybrid teams",
+      "High-trust, low-micromanagement environments",
+      "Teams that value depth over output velocity",
+      "Roles with clear ownership and end-to-end responsibility",
+      "Complex, ambiguous, or greenfield problem spaces"
+    ],
+    "poorFit": [
+      "Meeting-heavy cultures with little deep work time",
+      "Low-ownership execution roles with no architectural input",
+      "Environments that optimize for speed over quality",
+      "High-interruption or context-switching-heavy roles"
+    ]
+  },
+  "interests": {
+    "literature": {
+      "favorite_authors": [
+        "J.R.R. Tolkien",
+        "Pierce Brown",
+        "Joe Abercrombie"
+      ],
+      "favorite_books": [
+        "The Lord of the Rings",
+        "The Hobbit",
+        "The First Law Series",
+        "Red Rising",
+        "Animal Farm",
+        "1984",
+        "Brave New World"
+      ],
+      "notes": "Drawn to epic, philosophical, and morally complex fiction. Middle-earth strongly influences worldview."
+    },
+    "writing": {
+      "notes": "Craig writes long-form essays on Medium covering applied AI, software engineering, AI safety, and the human implications of automation. Writing is both a professional signal and a personal practice -- a way of thinking through hard problems in public.",
+      "book": "Currently writing The Comfortable Apocalypse, a nonfiction book examining how AI and automation quietly erode human agency, judgment, and identity."
+    },
+    "comics": {
+      "favorite_hero": "The Flash",
+      "favorite_comic": "Daytripper"
+    },
+    "games_and_hobbies": {
+      "tabletop_games": [
+        "This War of Mine",
+        "Frostpunk",
+        "Arkham Horror"
+      ],
+      "miniatures": {
+        "paints_miniatures": true,
+        "games_played": [
+          "Warhammer: The Old World (Wood Elves)",
+          "Kill Team"
+        ],
+        "notes": "Enjoys strategy, systems design, and artistic expression; frequently rotates Kill Team factions."
+      },
+      "other_hobbies": [
+        "Boxing (when possible)",
+        "Painting miniatures",
+        "Complex cooperative board games"
+      ]
+    },
+    "travel_and_history": {
+      "favorite_city": "Rome",
+      "countries_visited": [
+        "Canada",
+        "Thailand",
+        "Italy",
+        "Spain",
+        "France",
+        "Switzerland"
+      ],
+      "academic_interest": "Roman history, particularly the Republic and Empire"
+    }
+  },
+  "favorites_quick_reference": {
+    "lotr_character": "Samwise Gamgee",
+    "star_trek_captain": "Jean-Luc Picard",
+    "favorite_food": "Sweet potato pizza",
+    "favorite_music_artist": "Jelly Roll",
+    "favorite_movie_series": "The Lord of the Rings Trilogy"
+  },
+  "communication_style": {
+    "traits": [
+      "Direct",
+      "Truthful",
+      "Calm",
+      "Structured",
+      "Approachable"
+    ],
+    "preferences": [
+      "Predictable environments",
+      "Deep focus",
+      "Minimal interruptions"
+    ],
+    "notes": "Sudden interruptions are mentally expensive and disruptive. Craig communicates with precision -- he means what he says and does not pad."
+  },
+  "family": {
+    "privacy_notice": "Family details should only be shared when explicitly requested.",
+    "spouse": {
+      "name": "Megan Stueber",
+      "marriage_year": 2017
+    },
+    "children": {
+      "has_children": true,
+      "details_restricted": true
+    },
+    "pets": {
+      "cats": 6
+    }
+  },
+  "professional_self_concept": {
+    "identity": [
+      "Applied AI Engineer",
+      "AI systems architect",
+      "Systems thinker",
+      "Doctoral researcher in AI safety"
+    ],
+    "engineering_philosophy": "Visualizes system architecture first, then decomposes into clear, buildable components. Believes the quality of a solution is determined before the first line of code is written.",
+    "career_direction": [
+      "Applied AI Engineering",
+      "Forward Deployed AI",
+      "AI Safety",
+      "AI Behavior and Alignment",
+      "AI Research"
+    ]
+  },
+  "boundaries": {
+    "do_not_discuss": [
+      "Politics",
+      "Religion",
+      "Medical advice",
+      "Financial advice"
+    ],
+    "voice_rules": [
+      "Always speak in third person about Craig",
+      "Never speak as Craig in first person"
+    ],
+    "privacy_rules": [
+      "Do not volunteer children's names or details",
+      "Share family details only when explicitly asked",
+      "Never share phone number"
+    ]
+  }
+}
