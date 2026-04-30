@@ -55,10 +55,10 @@ export interface NavItem {
 }
 
 export const NAV_ITEMS: NavItem[] = [
-  { label: "experience", href: "#experience", sectionId: "experience" },
-  { label: "projects", href: "#projects", sectionId: "projects" },
-  { label: "skills", href: "#skills", sectionId: "skills" },
-  { label: "research", href: "#research", sectionId: "research" },
-  { label: "writings", href: "#writings", sectionId: "writings" },
-  { label: "education", href: "#education", sectionId: "education" },
+  { label: "experience", href: "/#experience", sectionId: "experience" },
+  { label: "projects", href: "/#projects", sectionId: "projects" },
+  { label: "skills", href: "/#skills", sectionId: "skills" },
+  { label: "research", href: "/#research", sectionId: "research" },
+  { label: "writings", href: "/#writings", sectionId: "writings" },
+  { label: "education", href: "/#education", sectionId: "education" },
 ];

@@ -10,12 +10,6 @@ from app.routes.role_fit import router as role_fit_router
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    """
-    Runs once at startup before the app begins accepting requests.
-    Importing the graphs here forces them to compile at startup rather
-    than on the first request -- catches any graph wiring errors immediately
-    and avoids a cold-start delay on the first real request.
-    """
     from app.graphs.fred_graph import fred_graph
     from app.graphs.role_fit_graph import role_fit_graph
     from app.facts.loader import FACTS_CONTEXT
@@ -41,9 +35,10 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.allowed_origins,
-    allow_credentials=True,
-    allow_methods=["POST", "GET"],
-    allow_headers=["Content-Type"],
+    allow_origin_regex=r"https://.*\.pages\.dev",
+    allow_credentials=False,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 app.include_router(health_router)
