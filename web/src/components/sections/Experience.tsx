@@ -99,7 +99,7 @@ interface EarlierRole {
 const EARLIER_ROLES: EarlierRole[] = [
   {
     company: "Kurb Media",
-    years: "2019 – 2021",
+    years: "2019 – 2020",
     description:
       "Frontend delivery across React, PHP, Shopify, and early AR prototypes. Managed requirements and delivery timelines directly with clients.",
   },

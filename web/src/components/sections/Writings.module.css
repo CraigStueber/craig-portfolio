@@ -171,3 +171,14 @@
 .mediumLink:hover {
   color: var(--color-accent);
 }
+@media (max-width: 740px) {
+  .bookHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-md);
+  }
+
+  .bookStatus {
+    text-align: left;
+  }
+}

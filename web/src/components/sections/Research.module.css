@@ -171,3 +171,19 @@
   line-height: 1.6;
   opacity: 0.7;
 }
+@media (max-width: 740px) {
+  .dissertationHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-md);
+  }
+
+  .dissertationMeta {
+    align-items: flex-start;
+  }
+
+  .dissertationInstitution,
+  .dissertationStatus {
+    text-align: left;
+  }
+}

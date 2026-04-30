@@ -199,3 +199,28 @@
   line-height: 1.6;
   opacity: 0.6;
 }
+@media (max-width: 640px) {
+  .roleHeader {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  .roleMeta {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: var(--space-xs);
+  }
+
+  .roleCompany {
+    text-align: left;
+  }
+
+  .roleDetails {
+    text-align: left;
+  }
+
+  .roleTitle {
+    white-space: normal;
+    font-size: var(--font-size-base);
+  }
+}

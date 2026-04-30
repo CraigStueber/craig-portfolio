@@ -72,19 +72,15 @@ async def chat(request: ChatRequest):
         )
 
     initial_state: PortfolioState = {
-        "messages": lc_messages,
-        "intent": "fred",
-        "section_id": request.section_id,
+        "messages":         lc_messages,
+        "intent":           "fred",
+        "section_id":       request.section_id,
         "retrieved_context": "",
-        "draft_response": "",
-        "fact_check_result": "pass",
-        "fact_check_notes": "",
-        "drift_flag": False,
-        "drift_notes": "",
-        "jd_text": None,
-        "jd_parsed": None,
-        "fit_assessment": None,
-        "final_response": "",
+        "draft_response":   "",
+        "final_response":   "",
+        "jd_text":          None,
+        "jd_parsed":        None,
+        "fit_assessment":   None,
     }
 
     result = await fred_graph.ainvoke(initial_state)
