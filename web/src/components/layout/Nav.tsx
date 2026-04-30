@@ -8,11 +8,7 @@ export default function Nav() {
   return (
     <nav className={styles.nav}>
       {NAV_ITEMS.map((item) => (
-        <Link
-          key={item.sectionId}
-          href={`/${item.href}`}
-          className={styles.navLink}
-        >
+        <Link key={item.sectionId} href={item.href} className={styles.navLink}>
           {item.label}
         </Link>
       ))}
