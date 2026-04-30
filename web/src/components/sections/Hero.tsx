@@ -28,7 +28,7 @@ export default function Hero({ onOpenChat }: HeroProps) {
             <div className={styles.bioBlock}>
               <p className={styles.bio}>
                 Builds and ships production LLM systems end to end. Doctoral
-                researcher in AI safety. 
+                researcher in AI safety.
               </p>
               <p className={styles.quote}>
                 &ldquo;Work hard and be nice to people.&rdquo;
@@ -44,23 +44,6 @@ export default function Hero({ onOpenChat }: HeroProps) {
               className={styles.avatar}
               priority
             />
-          </div>
-        </div>
-
-        {/* Divider */}
-        <div className={styles.divider} />
-
-        {/* Current role + Education */}
-        <div className={styles.metaGrid}>
-          <div className={styles.metaItem}>
-            <span className={styles.metaLabel}>current role</span>
-            <span className={styles.metaValue}>BHE GT&amp;S</span>
-            <span className={styles.metaSubValue}>since 2025</span>
-          </div>
-          <div className={styles.metaItem}>
-            <span className={styles.metaLabel}>research</span>
-            <span className={styles.metaValue}>Doctoral Candidate</span>
-            <span className={styles.metaSubValue}>National University</span>
           </div>
         </div>
 
