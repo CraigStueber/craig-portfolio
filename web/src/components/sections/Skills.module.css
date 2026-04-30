@@ -1,0 +1,101 @@
+.section {
+  padding: var(--space-4xl) 0;
+}
+
+/* Languages block */
+.languagesBlock {
+  margin-bottom: var(--space-3xl);
+}
+
+.languages {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.language {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.languageMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.languageName {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-primary);
+  text-transform: lowercase;
+  letter-spacing: 0.02em;
+}
+
+.languageYears {
+  font-size: var(--font-size-xs);
+  color: var(--color-accent);
+  opacity: 0.8;
+}
+
+.barTrack {
+  height: 2px;
+  background-color: var(--color-border);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  background-color: var(--color-accent);
+  border-radius: 2px;
+  opacity: 0.7;
+  transition: width 0.6s ease;
+}
+
+/* Skill groups */
+.groups {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xl);
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.groupLabel {
+  font-size: var(--font-size-xs);
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  border-left: 2px solid var(--color-accent);
+  padding-left: var(--space-md);
+  opacity: 0.8;
+}
+
+/* Pills */
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.pill {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: var(--space-xs) var(--space-md);
+  letter-spacing: 0.05em;
+  transition:
+    color var(--transition-fast),
+    border-color var(--transition-fast);
+}
+
+.pill:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}

@@ -20,6 +20,7 @@ class Settings(BaseSettings):
     api_port: int = 8000
     allowed_origins: list[str] = [
         "https://craigstueber.com",
+        "http://localhost:3000",
         "http://localhost:5173",
     ]
 

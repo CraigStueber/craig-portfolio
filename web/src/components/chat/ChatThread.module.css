@@ -1,0 +1,27 @@
+.thread {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  padding: var(--space-xl);
+  overflow-y: auto;
+  flex: 1;
+  min-height: 0;
+}
+
+/* Scrollbar styling */
+.thread::-webkit-scrollbar {
+  width: 4px;
+}
+
+.thread::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.thread::-webkit-scrollbar-thumb {
+  background-color: var(--color-border);
+  border-radius: 2px;
+}
+
+.thread::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-accent);
+}

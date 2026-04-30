@@ -1,9 +1,10 @@
-import { useState, useCallback, useRef } from "react";
+import { useState, useCallback, useRef, useEffect } from "react";
 import { sendChatMessage } from "@/lib/api";
 import type { Message, SectionId } from "@/types";
 
 interface UseChatOptions {
   sectionId: SectionId;
+  initialMessages?: Message[];
 }
 
 interface UseChatReturn {
@@ -14,22 +15,28 @@ interface UseChatReturn {
   clear: () => void;
 }
 
-export function useChat({ sectionId }: UseChatOptions): UseChatReturn {
-  const [messages, setMessages] = useState<Message[]>([]);
+export function useChat({
+  sectionId,
+  initialMessages = [],
+}: UseChatOptions): UseChatReturn {
+  const [messages, setMessages] = useState<Message[]>(initialMessages);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-
-  // Ref to track if a request is in flight -- prevents duplicate sends
   const isLoadingRef = useRef(false);
+
+  // Reset messages when section changes or modal reopens with new history
+  useEffect(() => {
+    setMessages(initialMessages);
+    setError(null);
+  }, [sectionId, initialMessages]);
 
   const send = useCallback(
     async (content: string) => {
       if (!content.trim() || isLoadingRef.current) return;
 
       const userMessage: Message = { role: "user", content: content.trim() };
-
-      // Optimistically add the user message before the API call
       const updatedMessages = [...messages, userMessage];
+
       setMessages(updatedMessages);
       setIsLoading(true);
       setError(null);
@@ -51,16 +58,13 @@ export function useChat({ sectionId }: UseChatOptions): UseChatReturn {
             ? err.message
             : "Something went wrong. Please try again.";
         setError(message);
-
-        // Remove the optimistically added user message on failure
-        // so the user can retry without duplicate messages
         setMessages((prev) => prev.slice(0, -1));
       } finally {
         setIsLoading(false);
         isLoadingRef.current = false;
       }
     },
-    [messages, sectionId]
+    [messages, sectionId],
   );
 
   const clear = useCallback(() => {

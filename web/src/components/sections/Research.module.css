@@ -1,0 +1,173 @@
+.section {
+  padding: var(--space-4xl) 0;
+}
+
+/* Dissertation block */
+.dissertation {
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: var(--space-2xl);
+  margin-bottom: var(--space-3xl);
+  transition: border-color var(--transition-base);
+}
+
+.dissertation:hover {
+  border-color: var(--color-accent);
+}
+
+.dissertationHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-xl);
+  margin-bottom: var(--space-lg);
+}
+
+.dissertationTitleBlock {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.dissertationBadge {
+  font-size: var(--font-size-xs);
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  opacity: 0.7;
+}
+
+.dissertationTitle {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  border-left: 2px solid var(--color-accent);
+  padding-left: var(--space-md);
+  line-height: 1.4;
+}
+
+.dissertationMeta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--space-xs);
+  flex-shrink: 0;
+}
+
+.dissertationInstitution {
+  font-size: var(--font-size-sm);
+  color: var(--color-accent);
+  font-weight: 500;
+  text-align: right;
+  opacity: 0.8;
+}
+
+.dissertationStatus {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  text-align: right;
+}
+
+.dissertationThesis {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  padding-left: var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+
+/* Framework layers */
+.frameworkLayers {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  padding-left: var(--space-md);
+}
+
+.frameworkLabel {
+  font-size: var(--font-size-xs);
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  opacity: 0.6;
+  margin-bottom: var(--space-xs);
+}
+
+.layer {
+  display: flex;
+  gap: var(--space-lg);
+}
+
+.layerMarker {
+  font-size: var(--font-size-xs);
+  color: var(--color-accent);
+  opacity: 0.5;
+  flex-shrink: 0;
+  padding-top: 2px;
+}
+
+.layerContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.layerName {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-primary);
+  font-weight: 500;
+}
+
+.layerDescription {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  opacity: 0.7;
+}
+
+/* Broader interests */
+.interests {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.interestsHeading {
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  border-left: 2px solid var(--color-accent);
+  padding-left: var(--space-md);
+}
+
+.interestList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.interest {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  padding-left: var(--space-md);
+  border-left: 1px solid var(--color-border);
+  transition: border-color var(--transition-fast);
+}
+
+.interest:hover {
+  border-color: var(--color-accent);
+}
+
+.interestArea {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-primary);
+  font-weight: 500;
+}
+
+.interestDescription {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  opacity: 0.7;
+}

@@ -19,6 +19,7 @@
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 var(--space-xl);
+  gap: var(--space-2xl);
 }
 
 .logo {
@@ -27,6 +28,7 @@
   color: var(--color-text-primary);
   text-decoration: none;
   letter-spacing: 0.05em;
+  white-space: nowrap;
   transition: color var(--transition-fast);
 }
 
@@ -34,10 +36,11 @@
   color: var(--color-accent);
 }
 
+/* Desktop nav */
 .nav {
   display: flex;
   align-items: center;
-  gap: var(--space-xl);
+  gap: var(--space-lg);
 }
 
 .navLink {
@@ -47,6 +50,7 @@
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  white-space: nowrap;
   transition: color var(--transition-fast);
 }
 
@@ -60,6 +64,7 @@
   border: 1px solid var(--color-accent);
   border-radius: var(--border-radius);
   padding: var(--space-xs) var(--space-md);
+  white-space: nowrap;
   transition:
     color var(--transition-fast),
     background-color var(--transition-fast),
@@ -70,4 +75,81 @@
   color: #0a0a0a;
   background-color: var(--color-accent);
   box-shadow: 0 0 12px var(--color-accent-glow);
+}
+
+/* Hamburger button -- hidden on desktop */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-xs);
+}
+
+.hamburgerLine {
+  width: 22px;
+  height: 2px;
+  background-color: var(--color-text-primary);
+  border-radius: 2px;
+  transition: background-color var(--transition-fast);
+}
+
+.hamburger:hover .hamburgerLine {
+  background-color: var(--color-accent);
+}
+
+/* Mobile menu */
+.mobileMenu {
+  display: none;
+  flex-direction: column;
+  gap: var(--space-lg);
+  position: fixed;
+  top: var(--header-height);
+  left: 0;
+  right: 0;
+  background-color: rgba(10, 10, 10, 0.97);
+  backdrop-filter: blur(12px);
+  padding: var(--space-xl);
+  border-bottom: 1px solid var(--color-border);
+  z-index: 99;
+}
+
+.mobileMenu.open {
+  display: flex;
+}
+
+.mobileNavLink {
+  font-size: var(--font-size-sm);
+  font-family: var(--font-mono);
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: var(--space-sm) 0;
+  border-bottom: 1px solid var(--color-border);
+  transition: color var(--transition-fast);
+}
+
+.mobileNavLink:hover {
+  color: var(--color-accent);
+}
+
+.mobileNavLinkAccent {
+  composes: mobileNavLink;
+  color: var(--color-accent);
+  border-bottom: none;
+}
+
+/* Breakpoint -- swap to hamburger at 1000px */
+@media (max-width: 1000px) {
+  .nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
 }
