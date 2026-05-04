@@ -2,11 +2,11 @@
   "type": "authoritative_facts",
   "domain": "professional_experience",
   "owner": "Craig Stueber",
-  "lastUpdated": "2026-05-01",
+  "lastUpdated": "2026-05-04",
   "currentRole": {
     "title": "Senior Full Stack Engineer — AI Systems Integration",
     "company": "Berkshire Hathaway Energy (BHE GT&S)",
-    "location": "San Diego, CA",
+    "location": "Richmond, VA",
     "years": "2025 – Present",
     "status": "Current"
   },
@@ -39,7 +39,9 @@
         "Designed behavior-constrained AI workflows for internal tools, reducing hallucination-related defects in production-critical systems",
         "Conducted behavioral incident triage for AI-assisted systems, diagnosing failure modes including intention drift, unsafe outputs, and requirement misalignment",
         "Translated abstract AI risk, safety, and compliance requirements into deployable, auditable system designs",
-        "Spearheaded early-stage agentic R&D initiatives to advance document retrieval and data understanding use cases for internal process automation, saving 30-50% on internal processes"
+        "Spearheaded early-stage agentic R&D initiatives to advance document retrieval and data understanding use cases for internal process automation, saving 30-50% on internal processes",
+        "Championed and enforced frontend accessibility standards across Dekaflow 2.0, including ARIA roles, keyboard navigation, and contrast compliance, establishing patterns the broader engineering team inherited",
+        "Led UI/UX standards reviews with the engineering team, defining component conventions, interaction patterns, and frontend quality criteria that shaped how features were scoped and shipped across the platform"
       ],
       "themes": [
         "AI agent R&D",
@@ -69,8 +71,9 @@
         "vendorCostReduction": "$250,000 annually in external vendor costs eliminated"
       },
       "responsibilities": [
-        "Served as the sole engineer across 6 independent brand teams, building all customer-facing applications from 0 to 1 in direct collaboration with brand managers and third-party marketing partners, delivering 140+ features across all brands",
-        "Designed and shipped multiple consumer-facing React and Supabase applications including Hot Tomato Summer, a live voting platform reaching 30,000+ users in two weeks, plus sweepstakes, e-commerce storefronts, and event discovery tools, supporting transition of company from local brand to national market",
+        "Sole engineer across 6 independent brand teams, owning 100% of frontend system design and delivering all consumer-facing applications from 0 to 1 in direct collaboration with brand managers and third-party marketing partners, delivering 140+ features across all brands",
+        "Designed, shipped, and owned full product delivery for consumer-facing web applications (React, Supabase) across 6 brands, including event discovery tools, fan engagement platforms, sweepstakes systems, and e-commerce storefronts, supporting transition of company from local brand to national market",
+        "Engineered Hot Tomato Summer, a multi-city restaurant voting platform that scaled to 30K+ users in two weeks, implementing rule-based fraud detection, device fingerprinting, and fail-safe rendering to maintain voting integrity under national traffic surges",
         "Built an agentic customer service tool used daily by 10 reps that combined customer-submitted context with rep-authored input to generate complete, ready-to-send response emails including recipient routing, CC recommendations, and delivery destination, reducing critical issue resolution time from 36+ hours to 6-8 hours",
         "Implemented rule-based priority classification on incoming customer service requests, automatically escalating and routing emergency-tier messages without requiring manual triage, eliminating bottlenecks across 100+ daily incoming requests",
         "Integrated modern LLM-powered tooling and React-based interfaces with a legacy PeopleSoft system, bridging contemporary AI capabilities with established enterprise infrastructure",
