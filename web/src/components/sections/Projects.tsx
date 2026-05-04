@@ -10,7 +10,13 @@ interface FeaturedProject {
   liveUrl: string;
   tags: string[];
 }
-
+interface ElevatedProject {
+  name: string;
+  category: string;
+  description: string;
+  highlights: string[];
+  tags: string[];
+}
 interface SecondaryProject {
   name: string;
   category: string;
@@ -43,7 +49,18 @@ const FEATURED: FeaturedProject = {
     "SSE",
   ],
 };
-
+const ELEVATED: ElevatedProject = {
+  name: "DanceCard",
+  category: "Agentic System / Mobile Application",
+  description:
+    "Co-founded and led all engineering for a cross-platform social mobile application. Built an agentic onboarding system using CrewAI alongside a full React Native application -- owned architecture, data modeling, and delivery independently from concept to App Store.",
+  highlights: [
+    "Agentic onboarding system using CrewAI with constrained generation patterns to maintain consistent, safe outputs in a consumer-facing context",
+    "Full cross-platform React Native application with real-time chat, event scheduling, and location-aware discovery across iOS and Android",
+    "Full App Store and Google Play submission including TestFlight and Play Console policy compliance",
+  ],
+  tags: ["CrewAI", "React Native", "Supabase", "Expo", "TypeScript"],
+};
 const SECONDARY: SecondaryProject[] = [
   {
     name: "Dekaflow 2.0",
@@ -61,25 +78,11 @@ const SECONDARY: SecondaryProject[] = [
     ],
   },
   {
-    name: "DanceCard",
-    category: "Agentic System / Mobile",
-    description:
-      "Agentic onboarding system via CrewAI paired with a full cross-platform React Native social application. Owned all architecture, data modeling, and delivery independently.",
-    tags: ["CrewAI", "React Native", "Supabase", "Expo", "TypeScript"],
-  },
-  {
     name: "Hot Tomato Summer",
     category: "High-Traffic Platform",
     description:
       "Multi-city restaurant voting platform reaching 30,000+ users in two weeks with rule-based fraud detection and voting anomaly dashboards.",
     tags: ["React", "Redux", "Supabase", "Python", "Fingerprinting"],
-  },
-  {
-    name: "PurrQuest",
-    category: "Mobile Application",
-    description:
-      "Location-aware mobile app for tracking outdoor and stray cats with clean geospatial state management and secure photo uploads.",
-    tags: ["React Native", "TypeScript", "Google Maps API", "Supabase"],
   },
 ];
 
@@ -133,7 +136,33 @@ export default function Projects({ onOpenChat }: ProjectsProps) {
             ))}
           </div>
         </div>
-
+        {/* Elevated */}
+        <div className={styles.elevated}>
+          <div className={styles.elevatedBadge}>// notable</div>
+          <div className={styles.elevatedHeader}>
+            <div>
+              <h3 className={styles.elevatedName}>{ELEVATED.name}</h3>
+              <span className={styles.elevatedCategory}>
+                {ELEVATED.category}
+              </span>
+            </div>
+          </div>
+          <p className={styles.elevatedDescription}>{ELEVATED.description}</p>
+          <ul className={styles.highlights}>
+            {ELEVATED.highlights.map((h, i) => (
+              <li key={i} className={styles.highlight}>
+                {h}
+              </li>
+            ))}
+          </ul>
+          <div className={styles.tags}>
+            {ELEVATED.tags.map((tag) => (
+              <span key={tag} className={styles.tag}>
+                {tag}
+              </span>
+            ))}
+          </div>
+        </div>
         {/* Secondary grid */}
         <div className={styles.grid}>
           {SECONDARY.map((project) => (

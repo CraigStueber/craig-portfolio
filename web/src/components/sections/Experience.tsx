@@ -25,10 +25,10 @@ const ROLES: Role[] = [
     years: "2025 – Present",
     location: "Richmond, VA",
     bullets: [
-      "Tech lead and people lead for a team of 6 engineers building Dekaflow 2.0, a next-generation enterprise platform supporting billions in annual east coast energy movement.",
-      "Led early-stage AI agent R&D designing a six-agent LangGraph pipeline for enterprise data understanding, translating complex operational data into actionable business insights.",
-      "Built and owned full-stack features end to end across Next.js, Java, MongoDB, and Azure including gas flow scheduling, hourly quantity tracking, and a cross-cutting user preferences system.",
-      "Led enterprise-wide GitHub Copilot deployment across 200+ engineers, establishing behavioral guardrails and governance practices for safe AI adoption.",
+      "Tech lead and people lead for a team of 6 engineers building Dekaflow 2.0, transitioning $100B+ in annual energy movement from on-prem to cloud.",
+      "Led early-stage AI agent R&D designing a six-agent LangGraph pipeline for enterprise data understanding, decreasing business stakeholder analysis time by 90%.",
+      "Built and owned full-stack features end to end across Next.js, Java, MongoDB, and Azure supporting gas flow scheduling, hourly quantity tracking, and a cross-cutting user preferences system, saving 10K+ hours monthly on operations.",
+      "Led enterprise-wide GitHub Copilot deployment across 200+ engineers, establishing behavioral guardrails and governance practices, reducing AI-introduced defects in production codebases.",
     ],
     tags: [
       "LangGraph",
@@ -48,10 +48,10 @@ const ROLES: Role[] = [
     years: "2021 – 2025",
     location: "Richmond, VA",
     bullets: [
-      "Sole engineer across 6 independent brand teams, building all customer-facing applications from 0 to 1 without product management support.",
-      "Built an agentic customer service tool combining customer context with rep input to generate complete, ready-to-send response emails with recipient routing and CC recommendations.",
-      "Replaced third-party tooling with in-house solutions, reducing external vendor costs by $250,000 annually.",
-      "Ran controlled prompt A/B evaluations analyzing token sensitivity and regression risks across model versions prior to production rollout.",
+      "Sole engineer across 6 independent brand teams, building all customer-facing applications from 0 to 1, delivering 140+ features across all brands.",
+      "Developed customer service tool used daily by 10 reps, reducing critical issue resolution time from 36+ hours to 6-8 hours.",
+      "Automated priority classification of service requests, routing emergency-tier messages without manual triage and eliminating bottlenecks across 100+ daily incoming requests.",
+      "Built LLM-integrated pipelines for classification, summarization, and automated routing with controlled prompt A/B evaluations, saving the IT team 180+ hours monthly on customer processing.",
     ],
     tags: [
       "React",
@@ -62,19 +62,6 @@ const ROLES: Role[] = [
       "Power Automate",
       "TypeScript",
     ],
-  },
-  {
-    title: "Co-Founder & Lead Engineer",
-    company: "DanceCard",
-    years: "2024 – 2025",
-    location: "Richmond, VA",
-    bullets: [
-      "Designed an agentic onboarding system using CrewAI with constrained generation patterns to maintain consistent, safe outputs in a consumer-facing context.",
-      "Owned full product architecture and technical direction for a cross-platform React Native and Supabase mobile application.",
-      "Built real-time chat, event scheduling, and location-aware discovery across iOS and Android.",
-      "Led full App Store and Google Play submission including TestFlight and Play Console policy compliance.",
-    ],
-    tags: ["CrewAI", "React Native", "Supabase", "Expo", "TypeScript"],
   },
   {
     title: "Full Stack Engineer",
@@ -99,9 +86,9 @@ interface EarlierRole {
 const EARLIER_ROLES: EarlierRole[] = [
   {
     company: "Kurb Media",
-    years: "2019 – 2020",
+    years: "2019 – 2021",
     description:
-      "Frontend delivery across React, PHP, Shopify, and early AR prototypes. Managed requirements and delivery timelines directly with clients.",
+      "Delivered 50+ client projects across React, PHP, WordPress, Shopify, and early AR prototypes. Managed requirements and delivery timelines directly with clients, delivering 100% of projects on time.",
   },
   {
     company: "PresenceLearning",
@@ -117,9 +104,9 @@ const EARLIER_ROLES: EarlierRole[] = [
   },
   {
     company: "Freelance",
-    years: "2017 – 2021",
+    years: "2017 – 2019",
     description:
-      "Full-stack delivery for nonprofits, authors, and real estate clients. Owned requirements, scoping, and delivery without project management support.",
+      "Built and delivered 10+ full-stack web applications for clients in publishing, real estate, and nonprofit industries. Owned requirements, scoping, and delivery -- secured 100% of clients through word-of-mouth referrals.",
   },
 ];
 

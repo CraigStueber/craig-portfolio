@@ -197,3 +197,62 @@
     align-self: flex-start;
   }
 }
+/* Elevated card */
+.elevated {
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: var(--space-2xl);
+  margin-bottom: var(--space-3xl);
+  transition: border-color var(--transition-base);
+}
+
+.elevated:hover {
+  border-color: var(--color-accent);
+}
+
+.elevatedBadge {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: var(--space-lg);
+  opacity: 0.5;
+}
+
+.elevatedHeader {
+  margin-bottom: var(--space-lg);
+}
+
+.elevatedName {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  border-left: 2px solid var(--color-accent);
+  padding-left: var(--space-md);
+  line-height: 1.2;
+  margin-bottom: var(--space-xs);
+}
+
+.elevatedCategory {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  padding-left: var(--space-md);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.elevatedDescription {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  margin-bottom: var(--space-lg);
+  padding-left: var(--space-md);
+}
+
+@media (max-width: 640px) {
+  .elevatedHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-md);
+  }
+}
